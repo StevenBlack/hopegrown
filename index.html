@@ -341,8 +341,9 @@
 <script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-if ( ( window.location.host.toLowerCase() == "test.hopegrown.ca" ) || ( window.location.protocol.toLowerCase() == "file:" ) ) {
-	$( "body" ).addClass( "testSite" )
+var oLoc= window.location;
+if ( ( ( oLoc.host.toLowerCase() == "test.hopegrown.ca" ) && ( oLoc.href.toLowerCase().indexOf( "_site" ) < 0 ) ) || ( oLoc.protocol.toLowerCase() == "file:" ) ) {
+		$( "body" ).addClass( "testSite" )
 }
 ( function( $ ) {
 	$( function(){
