@@ -342,8 +342,9 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
 var oLoc= window.location;
-if ( ( ( oLoc.host.toLowerCase() == "test.hopegrown.ca" ) && ( oLoc.href.toLowerCase().indexOf( "_site" ) < 0 ) ) || ( oLoc.protocol.toLowerCase() == "file:" ) ) {
-		$( "body" ).addClass( "testSite" )
+if ( oLoc.href.toLowerCase().indexOf( "_site" ) < 0  && ( oLoc.host.toLowerCase() == "test.hopegrown.ca"   ||  oLoc.protocol.toLowerCase() == "file:" )  ) {
+		$( "body" ).addClass( "testSite" );
+		$( "footer" ).append( "<p>You're looking at the test version of the site</p>");
 }
 ( function( $ ) {
 	$( function(){
