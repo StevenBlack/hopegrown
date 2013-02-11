@@ -1,1 +1,7 @@
 _site/
+
+.DS_Store
+
+.dropbox
+
+web.config
