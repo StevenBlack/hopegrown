@@ -1,0 +1,32 @@
+New Pages
+=========
+
+- About us
+  - About the company [sam]
+  - Bios (headshots and 3-liners) (headshots from Flickr)  [sam]
+  - Links for tickets
+  - 
+  
+- Around Miss Julie page
+  - The Play    [sam]
+  - The Playwright  [sam]
+
+- Calendar == Google calendar drives this
+  - specific show times  [sam] [steve]
+  - Links for tickets
+
+- Tour dates (summary of the festivals)
+  - Links for tickets
+
+- News and media page
+  - Twitter aggregation    [steve]
+  - Links for tickets
+  - Dish from particular Flickr photosets   [steve]
+
+
+=== To Do ===
+- All Images go to image folder
+- Tags in the google calendar description to filter events from the calendar
+- Share the calendar with Steve  [sam]
+- Stuff goes into the stuff/ folder until it's ready for prime time.  [sam]
+- Set up a flickr account and accredit the group.  [steve]
