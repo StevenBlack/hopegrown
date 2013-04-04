@@ -1,0 +1,32 @@
+title: Hopegrown Productions
+url: http://hopegrown.ca
+permalink: /:year/:title.html
+team: Queen's Sailing
+
+# images
+image_default_alt: Hopegrown Productions
+
+exclude:
+- Rakefile
+- README.md
+- .git
+
+keywords:
+- Hopegrown Productions
+- Theatre
+- Montreal
+
+# Only First P Plugin
+only_first_p:
+show_read_more_link: true
+read_more_link_text: 'Read more'
+
+# Jekyll Flickr Set Plugin
+flickr_set:
+gallery_tag:   'p'
+gallery_class: 'gallery'
+a_href:        nil
+a_target:      '_blank'
+image_rel:     ''
+image_size:    's'
+api_key:       '1b837c9d01a3af89d6779dc27a688e2c'
