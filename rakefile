@@ -3,6 +3,7 @@ BOOTSTRAP_SOURCE = ENV['BOOTSTRAP_SOURCE'] || File.expand_path("~/Dropbox/dev/cs
 
 # Where to find our custom LESS file.
 BOOTSTRAP_CUSTOM_LESS = 'bootstrap/less/custom.less'
+BOOTSTRAP_RESPONSIVE_LESS = 'bootstrap/less/responsive.less'
 
 task :bootstrap => [:bootstrap_js, :bootstrap_css]
 
@@ -42,8 +43,21 @@ task :bootstrap_css do |t|
     cp source, target if different?(source, target)
   end
 
+  puts 'copying the theme variables.less file'
+  cp 'less/variables.less', 'bootstrap/less/variables.less'
+  puts 'copying the custom.less file'
+  cp 'less/custom.less', 'bootstrap/less/custom.less'
+
   puts "Compiling #{BOOTSTRAP_CUSTOM_LESS}"
-  sh 'lessc', '--compress', BOOTSTRAP_CUSTOM_LESS, 'bootstrap/css/bootstrap.min.css'
+  # sh 'lessc', '--compress', BOOTSTRAP_CUSTOM_LESS, ' bootstrap/css/bootstrap.min.css'
+  syscmd = 'lessc --compress ' + BOOTSTRAP_CUSTOM_LESS + ' > bootstrap/css/bootstrap.min.css'
+  system syscmd
+  syscmd = 'lessc --compress ' + BOOTSTRAP_RESPONSIVE_LESS + ' > bootstrap/css/bootstrap-responsive.min.css'
+  system syscmd
+  # Now copy the generated file home.
+  cp 'bootstrap/css/bootstrap.min.css', 'css/bootstrap.min.css'
+  cp 'bootstrap/css/bootstrap-responsive.min.css', 'css/bootstrap-responsive.min.css'
+
 end
 
 task :default => :jekyll
