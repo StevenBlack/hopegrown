@@ -1,6 +1,6 @@
 ---
 name: Lindsey Huebner
-role: Co-Founder & Actor
+role: Co-Founder and Actor
 hometown: Ottawa, ON
 head320: http://farm9.staticflickr.com/8530/8620654952_1d6c800282_n.jpg
 

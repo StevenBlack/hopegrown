@@ -1,6 +1,6 @@
 ---
 name: Miriam Cummings
-role: Co-Founder & Actor
+role: Co-Founder and Actor
 hometown: London, ON
 head320: http://farm9.staticflickr.com/8381/8619552615_85266d4f35_n.jpg
 

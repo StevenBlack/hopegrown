@@ -358,7 +358,7 @@
 	</div>
 	<div class="row-fluid">
 {% for sitepage in site.pages %}
-{% if sitepage.role %}
+{% if sitepage.role == 'Co-Founder and Actor' %}
 		<div class="span4 person">
 			<img src="{{ sitepage.head320 }}" alt="{{ sitepage.name }}, {{ sitepage.role }}"  title="{{ sitepage.name }}, {{ sitepage.role }}">
 			<p><strong>{{ sitepage.name }}</strong><br>{{ sitepage.role }}</p>
@@ -366,9 +366,19 @@
 		</div>
 {% endif %}
 {% endfor %}
-
 	</div>
 
+	<div class="row-fluid">
+{% for sitepage in site.pages %}
+{% if sitepage.role and sitepage.role != 'Co-Founder and Actor' %}
+		<div class="span4 person">
+			<img src="{{ sitepage.head320 }}" alt="{{ sitepage.name }}, {{ sitepage.role }}"  title="{{ sitepage.name }}, {{ sitepage.role }}">
+			<p><strong>{{ sitepage.name }}</strong><br>{{ sitepage.role }}</p>
+			<p>{{ sitepage.content }}</p>
+		</div>
+{% endif %}
+{% endfor %}
+	</div>
 
 	<!-- FOOTER -->
 	<footer>
