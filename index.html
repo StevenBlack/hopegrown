@@ -10,10 +10,12 @@
 <meta name="author" content="">
 
 <!-- Le styles -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+<link rel="stylesheet" href="css/social-buttons.css" />
+
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <style>
-
 	/* GLOBAL STYLES
 	-------------------------------------------------- */
 	/* Padding below the footer and lighter body text */
@@ -362,6 +364,9 @@
 				<p class="lead">Our debut production <strong><em>Around Miss Julie</em></strong>, a new play by Harry Standjofski, will premiere at the
 				<a href="http://www.montrealfringe.ca/en/show/around-miss-julie">St-Ambroise Montreal Fringe Festival</a> before taking off on an exciting international summer tour!
 				See you at the Fringe!</p>
+				<a href="https://www.facebook.com/HopegrownProductions"><button class="btn btn-xlarge btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button></a>
+				<a href="https://twitter.com/HopegrownPro"><button class="btn btn-xlarge btn-twitter"><i class="icon-twitter"></i> | Connect with Twitter</button></a>
+				
 				<p class="lead"><a href="mailto:info@hopegrown.ca">info@hopegrown.ca</a></p>
 			</div>
 		</div>
@@ -369,7 +374,7 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<h2>About us</h2>
+			<h2>About us </h2>
 		</div>
 	</div>
 	<div class="row-fluid clearfix">
@@ -396,23 +401,23 @@
 {% endfor %}
 
 		<div class="span4 person">
-
-			<h4>Recent Media Coverage</h4>
-			<dl>
-				<dt>May 8, 2013</dt>
-				<dd><a href="http://www.charpo-canada.com/2013/05/in-word-hopegrown-on-around-miss-julie.html">In A Word... Hopegrown on Around Miss Julie</a> from The Charlebois Post.</dd>
-			</dl>
-			<img src="images/AMJ-image.jpg" alt="Around Miss Julie" />
+			<img src="images/AMJ-image.jpg" style="margin-top:4em;" alt="Around Miss Julie" />
 		</div>
 	</div>
 
 	<div class="row-fluid clearfix" id="currentProject">
-		{% capture currentProject %}{% include currentProject.markdown %}{% endcapture %}
-		{{ currentProject | markdownify }}
+		{% include currentProject.html %}
 	</div>
 
 	<div class="row-fluid clearfix" id="schedule">
 		{% include sched.html %}
+	</div>
+
+
+	<h2 id="news">Latest News</h2>
+		{% assign posts = site.posts %}
+		{% assign listing_limit = 6 %}
+		{% include post-listing.html %}
 	</div>
 
 	{% include footer.html %}
