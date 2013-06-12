@@ -7,14 +7,12 @@ tagline: as featured on <a href="http://www.themainmtl.com/2013/06/06/hopegrown-
 
 ---
 
+<p>Posted by <a rel="author" title="Posts by Lauren Marlowe" href="http://www.themainmtl.com/author/lauren/">Lauren Marlowe</a>&nbsp;</p>
 
-<p>Posted by <a rel="author" title="Posts by Lauren Marlowe" href="http://www.themainmtl.com/author/lauren/">Lauren Marlowe</a></p>
-
-<p>June 6, 2013</p>
-
-<p><img width="500" height="500" src="http://www.themainmtl.com/wp-content/uploads/2013/06/601438_361008740679337_1888509082_n-500x500.jpg" alt="Photo: Hopegrown Productions Facebook."><br>Photo: Hopegrown Productions</p>
+<p><img width="500" height="500" src="http://www.themainmtl.com/wp-content/uploads/2013/06/601438_361008740679337_1888509082_n-500x500.jpg" alt="Photo: Hopegrown Productions Facebook."><br>Photo: Hopegrown Productions&nbsp;</p>
 
 <p><a href="http://www.hopegrown.ca"><strong>Hopegrown Productions</strong></a> was born out of necessity. Months earlier and a few months away from graduation, three fourth-year theatre students at Concordia University &ndash; <strong>Miriam Cummings</strong>, <strong>Lindsey Huebner</strong> and <strong>Samantha Megarry</strong> &ndash; in dreaded anticipation of the empty abyss of joblessness, post-study decided to find a play that they could possibly perform at the St. Ambroise Montreal Fringe Festival.</p>
+
 <p>They went in rosy-eyed eager to choose which they would perform. Except for one thing&ndash; they couldn’t. There was quite literally no play with a small(ish) cast featuring three young women that weren’t old or bimbos. It’s a constant struggle in the theatre and film business to find roles for women that are fully developed characters and not simply a part of the scenery or a force of chaos.</p>
 
 <p>On their <a href="http://www.hopegrown.ca"><span style="text-decoration: underline;"><strong>website</strong></span></a> they explain, “<em>Here’s a dirty theatre secret: the majority of theatre school graduates are women, yet there are very few good plays full of strong roles for young female actors. What we want is to play our own age and gender in an exciting new piece of Canadian theatre.</em>”</p>

@@ -3,7 +3,7 @@
 {% endunless %}
 
 {% for post in posts limit: listing_limit %}
-  <h2><a href="{{ post.url }}" class="dark-link">{{ post.title }}</a></h2>
+  <h3><a href="{{ post.url }}" class="dark-link"><em>{{ post.title }}</em></a></h3>
   <h4 class="low-top">
     Posted on {{ post.date | date: "%B %e, %Y" }} {% if post.tagline %}{{ post.tagline }}{% endif %}
     {% unless no_category %}
