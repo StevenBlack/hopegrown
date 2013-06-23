@@ -10,7 +10,17 @@
 					<li><a href="/#currentProject">Current Project</a></li>
 					<li><a href="/#schedule">Schedule</a></li>
 					<li><a href="http://www.montrealfringe.ca/en/show/around-miss-julie">GET TICKETS</a></li>
-					<li><a href="/#news">Latest News</a></li>
+					<li class="divider-vertical"></li>
+					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="/archive/">News & Reviews <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							{% for post in site.posts %}
+								{% if post.title and post.type == 'news' %}
+							<li><a href="{{ root_url }}{{ post.url }}">{{ post.date | date: '%b %e %Y' }} - {{ post.title }}</a></li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</li>
+					
 				</ul>
 			</div>
 		</div>
