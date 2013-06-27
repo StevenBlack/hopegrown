@@ -11,7 +11,13 @@
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/social-buttons.css" rel="stylesheet">
-<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- Le styles -->
+<link href="/css/custom.min.css" rel="stylesheet">
+{% if page.style %}
+ <style type="text/css">
+     {{ page.style }}
+ </style>
+{% endif %}
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,5 +40,6 @@
 		</div>
 		{% include footer.html %}
 	</div>
+	<script src="/js/jquery.js"></script>
 	<script src="/bootstrap/js/bootstrap.min.js"></script></body>
 </html>
