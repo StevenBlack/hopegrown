@@ -1,10 +1,8 @@
 _site/
-
 .DS_Store
-
 .dropbox
-
 web.config
-
-images/
+images/*
+bootstrap/js/*
+bootstrap/css/*
 /stuff/passwords.txt
