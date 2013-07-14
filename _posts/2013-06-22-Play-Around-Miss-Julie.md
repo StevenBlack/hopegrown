@@ -39,4 +39,4 @@ Even though they’ve known each other for the last four years at school, and th
 
 “As emerging artists, we strive to be a part of the movement towards making theatre a more gender-equal art form. in order to make the kind of theatre we want to make, we have to create artistic opportunities for ourselves.”
 
-And so they did. Reviews of their first performances can be found at [http://hopegrown.ca](hopegrown.ca).
+And so they did. Reviews of their first performances can be found at [http://hopegrown.ca](http://hopegrown.ca).
