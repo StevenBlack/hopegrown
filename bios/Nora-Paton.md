@@ -2,8 +2,7 @@
 name: Norah Paton
 role: Director
 hometown: Ottawa, ON
-head320: http://farm9.staticflickr.com/8242/8620654396_cea5010a19_n.jpg
+head320: /images/8620654396_cea5010a19_n.jpg
 
 ---
-When not doing theatre things, Norah can be found cooking, eating and 
-watching the worst reality TV she can find. This summer Norah is looking forward to seeing a whole lot of shows, spending lots of time outside and drinking a completely reasonable amount of beer. 
+Norah is originally from Ottawa, Ontario and just finished four years in Concordia University's Theatre Performance program. While in Montreal, selected on stage and back stage credits include Attempts on Her Life (TNC Theatre), The Last Days of Judas Iscariot and The Seventh Seal (Concordia University). Norah is thrilled to be taking Around Miss Julie to so many different places this summer and is so grateful for the support and enthusiasm we have already received. Here’s to a wonderful summer of wonderful theatre!
