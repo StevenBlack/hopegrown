@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Around of Applause
 tagline: as featured on <a href="http://www.broadwaybaby.com/listing.php?id=20724">BroadwayBaby.com</a>

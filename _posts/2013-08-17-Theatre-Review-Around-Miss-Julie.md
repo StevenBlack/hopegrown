@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Theatre Review -- Around Miss Julie
 tagline: as featured on <a href="http://www.threeweeks.co.uk/article/ed2013-theatre-review-around-miss-julie-hopegrown-productions/">Three Weeks Edinburgh</a>

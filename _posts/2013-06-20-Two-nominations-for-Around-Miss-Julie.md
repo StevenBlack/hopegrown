@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Around Miss Julie - Two nominations
 tagline: as featured on <a href="http://montrealfringe.ca/en/nominations-pour-les-prix-frankies-2013-frankies-awards-nominations-2013">Festival St-Ambroise Fringe News</a>

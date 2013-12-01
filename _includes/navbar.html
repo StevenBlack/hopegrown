@@ -14,23 +14,7 @@
 
 				<ul class="nav">
 					<li><a href="/#currentProject">Current Project</a></li>
-					<li><a href="/#schedule">Schedule</a></li>
-					<li class="divider-vertical"></li>
-					{% assign post_count = 0 %}
-					{% for post in site.posts %}
-						{% if post.title and post.type == 'news' %}
-					   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
-						{% endif %}
-					{% endfor %}
-					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="/archive/">Reviews ({{ post_count }} in all ) <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							{% for post in site.posts %}
-								{% if post.title and post.type == 'news' %}
-							<li><a href="{{ root_url }}{{ post.url }}">{{ post.date | date: '%b %e %Y' }} - {{ post.title }}</a></li>
-								{% endif %}
-							{% endfor %}
-						</ul>
-					</li>
+					<li><a href="/2013/">Our 2013 Tour</a></li>
 				</ul>
 			</div>
 		</div> <!-- /.container -->

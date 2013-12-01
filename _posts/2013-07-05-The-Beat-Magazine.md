@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Around Miss Julie – Summer tour 2013…catch it while you can! 
 tagline: as featured on <a href="http://www.thebeatmagazine.ca/index.php/theatre-reviews/1746-around-miss-julie-summer-tour-2013-catch-it-while-you-can">The Beat Magazine</a>

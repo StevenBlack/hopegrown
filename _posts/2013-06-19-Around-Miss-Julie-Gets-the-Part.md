@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Around Miss Julie Gets the Part
 tagline: as featured on <a href="http://thelinknewspaper.ca/article/4364/">The Link</a>

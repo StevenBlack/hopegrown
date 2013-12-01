@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Hopegrown Tour, Part 1 - Out of the Classroom and On the Road 
 tagline: as featured on <a href="http://bloodyunderrated.net/2013/06/05/hopegrown-tour-part-1-out-of-the-classroom-and-on-the-road/">http://bloodyunderrated.net</a>

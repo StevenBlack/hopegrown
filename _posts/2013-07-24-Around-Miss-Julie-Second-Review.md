@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Around Miss Julie (second review)
 tagline: as featured on <a href="http://fringefestivalcommunityreviews.wordpress.com/2013/07/24/around-miss-julie-second-review/">Hamilton Fringe Festival Community Reviews</a>

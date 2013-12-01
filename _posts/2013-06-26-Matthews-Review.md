@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Matthew’s Review – Around Miss Julie @ Ottawa Fringe 2013
 tagline: as featured on <a href="http://www.productionottawa.com/aroundmissjuliereview/">Production Ottawa</a>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Hopegrown Tour, Part 3, On to the next… Ottawa! 
 tagline: as featured on <a href="http://bloodyunderrated.net/2013/07/10/hopegrown-tour-part-3-on-to-the-next-ottawa/">Bloody Underrated</a>

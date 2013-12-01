@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Hamilton Fringe 2013 Reviews
 tagline: as featured on <a href="http://www.viewmag.com/14887-Hamilton+Fringe+2013+Reviews.htm">View Magazine Online</a>

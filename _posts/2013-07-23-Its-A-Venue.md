@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Hopegrown Tour, Part 4, It’s a venue!
 tagline: as featured on <a href="http://bloodyunderrated.net/2013/07/23/hopegrown-tour-part-4-its-a-venue/">Bloody Underrated</a>

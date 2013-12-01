@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title:  The Tension of Fresh out of School
 tagline: as featured on <a href="http://www.charpo-canada.com/2013/05/in-word-hopegrown-on-around-miss-julie.html">The Charlebois Post - Canada</a>

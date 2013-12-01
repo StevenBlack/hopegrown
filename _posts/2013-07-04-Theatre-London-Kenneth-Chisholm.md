@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Kenneth Chisholm's Review – Around Miss Julie
 tagline: as featured on <a href="http://theatreinlondon.ca/2013/07/around-miss-julie-review/">Theatre In London</a>

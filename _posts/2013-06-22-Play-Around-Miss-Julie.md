@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: On The Fringe Around Miss Julie
 tagline: as featured on <a href="http://hamiltonfringe.ca/on-the-fringe-8/">Hamilton Fringe</a>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: Hopegrown Tour, Part 2, Every new beginning
 tagline: as featured on <a href="http://bloodyunderrated.net/2013/07/03/hopegrown-tour-part-2-every-new-beginning/">Bloody Underrated</a>

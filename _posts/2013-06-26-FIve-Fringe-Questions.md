@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 2013post
 type: news
 title: 5 Fringe Questions with Hopegrown Productions
 tagline: as featured on <a href="http://thevisitorium.com/2013/06/26/5-fringe-questions-with-hopegrown-productions/">Visitorium</a>
