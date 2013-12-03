@@ -11,11 +11,9 @@
 <meta name="author" content="">
 
 <!-- Le styles -->
-<link href="css/custom.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 <link rel="stylesheet" href="css/social-buttons.css" />
-
-<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <style>
 
 
@@ -89,35 +87,6 @@
 		margin-right: 10px;
 	}
 
-	/* Featurettes
-	------------------------- */
-
-	.featurette-divider {
-		margin: 80px 0; /* Space out the Bootstrap <hr> more */
-	}
-	.featurette {
-		padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-		overflow: hidden; /* Vertically center images part 2: clear their floats. */
-	}
-	.featurette-image {
-		margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-	}
-
-	/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-	.featurette-image.pull-left {
-		margin-right: 40px;
-	}
-	.featurette-image.pull-right {
-		margin-left: 40px;
-	}
-
-	/* Thin out the marketing headings */
-	.featurette-heading {
-		font-size: 50px;
-		font-weight: 300;
-		line-height: 1;
-		letter-spacing: -1px;
-	}
 
 	/*  OUR STUFF */
 
@@ -220,11 +189,12 @@
 
 <body>
 
-{% include navbar.html %}
 
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="container carousel slide">
+	{% include navbar.html %}
+
 	<div class="carousel-inner">
 
 		<div class="item active">
@@ -237,9 +207,9 @@
 			<img src="images/star_745x500.jpg"  alt="Hopegrown Productions">
 		</div>
 		<div class="item">
-			<div class="row-fluid">
-				<div class="span10 offset1">
-					<div class="hero-unit">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="jumbotron">
 						<h2><em>Around Miss Julie</em> critics say...</h2>
 						<dl>
 							<dt><a href="http://www.productionottawa.com/author/matthewchamp/">Matthew Champ</a> in <a href="http://www.productionottawa.com/aroundmissjuliereview/">Production Ottawa</a></dt>
@@ -257,9 +227,9 @@
 		</div>
 
 		<div class="item">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="hero-unit">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="jumbotron">
 						<h2><em>Around Miss Julie</em></h2>
 						{% include awards.html %}
 					</div>
@@ -294,40 +264,49 @@
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container">
-	<div class="row-fluid">
+	<div class="row">
 		<div class="marketing">
-			<div class="span6">
+			<div class="col-md-6">
 				<p class="lead"><strong>Hopegrown Productions</strong> is a Montreal-based theatre company, founded in Fall 2012 
 					by Miriam Cummings, Lindsey Huebner and Samantha Megarry. We are committed to staging relevant stories featuring 
 					dynamic female characters.</p>
 
 			</div>
-			<div class="span6">
+			<div class="col-md-6">
 				<p class="lead">In 2013, Hopegrown’s debut production <em>Around Miss Julie</em> by Harry Standjofksi completed an 
 					ambitious 6-city tour, including the Edinburgh Festival Fringe. Exciting things to come in 2014! Check back in January!
 				</p>
-				<a href="https://www.facebook.com/HopegrownProductions"><button class="btn btn-xlarge btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button></a>
-				<a href="https://twitter.com/HopegrownPro"><button class="btn btn-xlarge btn-twitter"><i class="icon-twitter"></i> | Connect with Twitter</button></a>
 
-				<p class="lead"><a href="mailto:info@hopegrown.ca">info@hopegrown.ca</a></p>
+
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-sm-4 text-center">
+			<a href="https://www.facebook.com/HopegrownProductions"><button class="btn btn-xlarge btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button></a>
+		</div>		
+		<div class="col-sm-4 text-center">
+			<a href="https://twitter.com/HopegrownPro"><button class="btn btn-xlarge btn-twitter"><i class="icon-twitter"></i> | Connect with Twitter</button></a>
+		</div>		
+		<div class="col-sm-4 text-center">
+			<p class="lead"><a href="mailto:info@hopegrown.ca">info@hopegrown.ca</a></p>
+		</div>		
+	</div>
 
-	<div class="row-fluid clearfix" id="currentProject">
+	<div class="row" id="currentProject">
 		{% include currentProject.html %}
 	</div>
 
 
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-md-12">
 			<h2>About Us</h2>
 		</div>
 	</div>
-	<div class="row-fluid clearfix">
+	<div class="row">
 {% for sitepage in site.pages %}
 {% if sitepage.role == 'Co-Founder and Actor' %}
-		<div class="span4 person">
+		<div class="col-md-4 person">
 			<img src="{{ sitepage.head320 }}" alt="{{ sitepage.name }}, {{ sitepage.role }}"  title="{{ sitepage.name }}, {{ sitepage.role }}">
 			<p><strong>{{ sitepage.name }}</strong><br>{{ sitepage.role }}</p>
 			<p>{{ sitepage.content }}</p>
