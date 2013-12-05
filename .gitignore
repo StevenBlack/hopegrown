@@ -6,3 +6,5 @@ images/*
 bootstrap/js/*
 bootstrap/css/*
 /stuff/passwords.txt
+node_modules/
+bios/

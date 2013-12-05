@@ -11,10 +11,7 @@
 <meta name="author" content="">
 
 <!-- Le styles -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-<link rel="stylesheet" href="css/social-buttons.css" />
-
+<link href="css/hp.min.css" rel="stylesheet">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -22,11 +19,7 @@
 <![endif]-->
 
 <!-- Fav and touch icons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-<link rel="shortcut icon" href="/ico/favicon.ico">
+{% include favicons.html %}
 
 <style type="text/css">
 	.carousel {
@@ -48,7 +41,6 @@
 </head>
 
 <body>
-
 
 <!-- Carousel
 ================================================== -->
@@ -92,7 +84,7 @@
 							<h2><em>Around Miss Julie</em></h2>
 							{% include awards.html %}
 						</div>
-					
+
 					</div>
 				</div>
 			</div>
@@ -114,7 +106,7 @@
 			</div>
 
 		</div>
-	
+
 		<!-- controls -->
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
@@ -132,36 +124,34 @@
 	<div class="row">
 		<div class="marketing">
 			<div class="col-md-6">
-				<p class="lead"><strong>Hopegrown Productions</strong> is a Montreal-based theatre company, founded in Fall 2012 
-					by Miriam Cummings, Lindsey Huebner and Samantha Megarry. We are committed to staging relevant stories featuring 
+				<p class="lead"><strong>Hopegrown Productions</strong> is a Montreal-based theatre company, founded in Fall 2012
+					by Miriam Cummings, Lindsey Huebner and Samantha Megarry. We are committed to staging relevant stories featuring
 					dynamic female characters.</p>
 
 			</div>
 			<div class="col-md-6">
-				<p class="lead">In 2013, Hopegrown’s debut production <em>Around Miss Julie</em> by Harry Standjofksi completed an 
+				<p class="lead">In 2013, Hopegrown’s debut production <em>Around Miss Julie</em> by Harry Standjofksi completed an
 					ambitious 6-city tour, including the Edinburgh Festival Fringe. Exciting things to come in 2014! Check back in January!
 				</p>
-
 
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-4 text-center">
-			<a href="https://www.facebook.com/HopegrownProductions"><button class="btn btn-xlarge btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button></a>
-		</div>		
+			<a href="https://www.facebook.com/HopegrownProductions"><button class="btn btn-xlarge btn-social btn-facebook"><i class="fa fa-facebook"></i> | Connect with Facebook</button></a>
+		</div>
 		<div class="col-sm-4 text-center">
-			<a href="https://twitter.com/HopegrownPro"><button class="btn btn-xlarge btn-twitter"><i class="icon-twitter"></i> | Connect with Twitter</button></a>
-		</div>		
+			<a href="https://twitter.com/HopegrownPro"><button class="btn btn-xlarge btn-social btn-twitter"><i class="fa fa-twitter"></i> | Connect with Twitter</button></a>
+		</div>
 		<div class="col-sm-4 text-center">
 			<p class="lead"><a href="mailto:info@hopegrown.ca">info@hopegrown.ca</a></p>
-		</div>		
+		</div>
 	</div>
 
 	<div class="row" id="currentProject">
 		{% include currentProject.html %}
 	</div>
-
 
 	<div class="row">
 		<div class="col-md-12">
@@ -174,17 +164,15 @@
 		<div class="col-md-4 person">
 			<img src="{{ sitepage.head320 }}" alt="{{ sitepage.name }}, {{ sitepage.role }}"  title="{{ sitepage.name }}, {{ sitepage.role }}">
 			<p><strong>{{ sitepage.name }}</strong><br>{{ sitepage.role }}</p>
-			<p>{{ sitepage.content }}</p>
+			{{ sitepage.content }}
 		</div>
 {% endif %}
 {% endfor %}
 	</div>
 
-
 	{% include footer.html %}
 
 </div><!-- /.container -->
-
 
 <!-- Le javascript
 ================================================== -->
@@ -242,7 +230,6 @@ jQuery(function($) {
 	});
 
 });
-
 
 
 // $(".person").equalHeights();

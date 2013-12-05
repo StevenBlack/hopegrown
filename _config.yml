@@ -10,6 +10,10 @@ exclude:
 - Rakefile
 - README.md
 - .git
+- font-awesome
+- stuff
+- node-modules
+- less
 
 keywords:
 - Hopegrown Productions
