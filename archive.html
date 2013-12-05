@@ -15,7 +15,7 @@ header_text: Listing of Reports and Posts
 	<h3>{{post.date | date: "%B %Y"}}</h3>
 	{% endif %}
 
-	{% case post.type %} 
+	{% case post.type %}
 		{% when 'news' %}
 			<dl>
 				<dt><a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>{{ post.title }}</strong></span></a>
