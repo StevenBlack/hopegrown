@@ -1,7 +1,11 @@
 <footer>
 	<hr />
-	<p>
-		Copyright 2013 Hopegrown Productions -- Last updated: {{ site.time | date: "%h %d %Y" }}
-		<span class="pull-right"><a href="https://github.com/StevenBlack/hopegrown.next" class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a></span>
-	</p>
+	<div class="col-md-9">
+		<p class="small">Copyright 2013 Hopegrown Productions -- Last updated: {{ site.time | date: "%h %d %Y" }}</p>
+	</div>
+	<div class="col-md-3">
+			<a href="https://github.com/StevenBlack/hopegrown.next">
+				<button class="btn btn-block btn-social btn-github" style="width:100%"><i class="fa fa-github"></i>Source on Github</button>
+			</a>
+	</div>
 </footer>
