@@ -30,6 +30,10 @@
 		/* min-width: 100%; */
 		margin: auto;
 	}
+	em.lotus {
+		font-weight: bold;
+		text-shadow: 1px 1px 1px rgba(122, 62, 72, 0.77);
+	}
 </style>
 
 </head>
@@ -43,7 +47,7 @@
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="images/bowlOfCards_745x500.jpg"  alt="Hopegrown Productions">
+				<img src="images/bowlofCards_745x500.jpg"  alt="Hopegrown Productions">
 			</div>
 			<div class="item">
 				<a href="/thanks"><img src="images/ThankYou_753x500.jpg"  alt="Hopegrown Productions"></a>
@@ -112,22 +116,74 @@
 		{% include currentProject.html %}
 	</div>
 
+
+
+	<div class="panel panel-info" style="margin-top:2em">
+		<div class="panel-heading clearfix">
+			<h3 class="panel-title"><a href="https://www.facebook.com/events/219700638210099/"><i class="fa fa-thumbs-o-up"></i> Get Your DRINK ON for Hopegrown 3.0<span class="pull-right">March 1 <i class="fa fa-calendar"></i></span></a></h3>
+		</div>
+		<div class="panel-body">
+			<p>Here are <a href="https://www.facebook.com/events/219700638210099/">all the deets. <i class="fa fa-facebook-square"></i></a></p>
+			<p><strong>WHERE</strong>: McKibbin's Bishop Street (1426 Bishop Street, Montréal)</p>
+			<p><strong>WHEN</strong>: Saturday, March 1st @ 9:00pm.</p>
+			<p><strong>WHY</strong>: To fundraise for Hopegrown's next project &amp; to share an evening with the fantastic Montreal theatre community</p>
+
+			<p>Invite all your friends and dance the night away! We'll be selling $5 wristbands to get you cheap drinks all night.</p>
+			<p>
+				$5 = Wristband <br>
+				Wristband = cheap drinks all night <br>
+				Cheap drinks all night = the greatest time of your life <br>
+			</p>
+		</div>
+	</div>
+
+
 	<div class="row">
 		<div class="col-md-12">
 			<h2>About Us</h2>
 		</div>
 	</div>
-	<div class="row">
-{% for sitepage in site.pages %}
-{% if sitepage.role == 'Co-Founder and Actor' %}
-		<div class="col-md-4 person">
-			<img src="{{ sitepage.head320 }}" alt="{{ sitepage.name }}, {{ sitepage.role }}"  title="{{ sitepage.name }}, {{ sitepage.role }}">
-			<p><strong>{{ sitepage.name }}</strong><br>{{ sitepage.role }}</p>
-			{{ sitepage.content }}
+		<div class="row clearfix">
+			<div class="col-md-4 person">
+				<img src="/images/8619552615_85266d4f35_n.jpg" alt="Miriam Cummings, Co-Founder and Actor" title="Miriam Cummings, Co-Founder and Actor">
+				<p><strong>Miriam Cummings</strong><br>Co-Founder and Actor for <em class="lotus">LOTUS</em><br>For Hopegrown: Julie in <em>Around Miss Julie</em> 2013</p>
+				<p>Miriam was born and raised in London, Ontario. She recently graduated from Concordia's Theatre Performance Program (with Distinction). At Concordia, she and Lindsey acted as Co-Presidents of their student association. Recent theatre credits include Solveig in Peer Gynt (Concordia U.) and Bianca in Taming of the Shrew (Repercussion Theatre). Hopegrown’s summer tour represents a year of dedicated work by many people. Miriam is delighted to spend this summer performing Harry's show with her best friends. Endless gratitude and joy to Hopegrown, Harry, my family and my friends.</p>
+			</div>
+			<div class="col-md-4 person">
+				<img src="/images/12513092905_e67b217316_n.jpg" alt="Samantha Megarry, Co-Founder and Actor" title="Samantha Megarry, Co-Founder and Actor">
+				<p><strong>Samantha Megarry</strong><br>Co-Founder and Actor for <em class="lotus">LOTUS</em><br>For Hopegrown: Ilona in <em>Around Miss Julie</em> 2013</p>
+				<p>Originally from Burlington, Ontario, Samantha holds a BFA in Theatre Performance from Concordia University. Select credits include Mae in <em>The Wild Party</em> (In Your Face Entertainment), Rachel in <em>Ludlow Fair</em> (Concordia University), Lady Macduff/Angus in <em>Macbeth</em> (Repercussion Theatre), and of course Ilona in <em>Around Miss Julie</em> (Hopegrown Productions). When not acting, Samantha can be found at hot yoga, running through NDG, or working at the best Irish pub in town. Hopegrown's inaugural season was truly a dream come true. It is with great pride (and overwhelming excitement) that we bring <em class="lotus">LOTUS</em> to the stage this summer. Thank you to my wonderful family, past and present members of the Hopegrown team, and everyone who will see the show this summer! </p>
+			</div>
+			<div class="col-md-4 person">
+				<img src="/images/12513214773_dc5f79bd5c_n.jpg" alt="Lindsey Huebner, Co-Founder and Actor" title="Lindsey Huebner, Co-Founder and Actor">
+				<p><strong>Lindsey Huebner</strong><br>Co-Founder<br>For Hopegrown: Donna in <em>Around Miss Julie</em> 2013</p>
+				<p> Lindsey grew up in Ottawa, and has a BFA in theatre performance from Concordia University. Recent credits include <em>The Bucket</em>, <em>Ludlow Fair</em>, <em>The Last Days of Judas Iscariot</em>, <em>Peer Gynt</em>, and of course, Hopegrown's inaugural production <em>Around Miss Julie</em>. Touring with the AMJ cast and crew has been the highlight of this young actress's career and she can't wait to join this talented bunch again. This year, Lindsey is taking a backseat from Hopegrown happenings as she is currently in the UK completing her Masters in Acting from the Bristol Old Vic Theatre School. Although not directly involved, Lindsey is there in spirit and sending all her love to the <em class="lotus">LOTUS</em> team.</p>
+			</div>
 		</div>
-{% endif %}
-{% endfor %}
-	</div>
+
+		<div class="row clearfix">
+			<div class="col-md-3 person">
+				<img src="/images/12513214233_5ce0e89dbf_n.jpg" alt="Caitlin Murphy, Playwright" title="Caitlin Murphy, Playwright">
+				<p><strong>Caitlin Murphy</strong><br>Playwright for <em class="lotus">LOTUS</em></p>
+				<p>Caitlin is a writer, director and dramaturg who has worked in both theatre and film. Most recently, her play <em>Fruits Unheard Of</em> was presented in New York City by Working Artists Theatre, and her piece <em>The Perfect Bird</em> was performed at the Centaur Theatre's <em>Urban Tales</em>. Her films <em>Flushing Lacan</em> (2010) and <em>TOAST</em> (2011) won the Jury's Awards at the Montreal ACTRA Short Film Festival. She is a regular theatre reviewer for the Charlebois Post, and is currently production dramaturg for the Segal Centre's upcoming production of <em>Top Girls</em>. Caitlin is also a teacher and new mother to Nicolas. She is thrilled to be creating <em class="lotus">LOTUS</em> for Hopegrown, and inspired by the company's guts, grit and dedication. <a href="http://www.caitlinmurphy.ca">www.caitlinmurphy.ca</a></p>
+			</div>
+			<div class="col-md-3 person">
+				<img src="/images/12513555324_791f76ab0a_n.jpg" alt="Bryan Doubt, Director" title="Bryan Doubt, Director">
+				<p><strong>Bryan Doubt</strong><br>Director for <em class="lotus">LOTUS</em></p>
+				<p>Bryan has taught actors and creative process for over twenty-five years at a number of reputable theatre schools and studios, including The Stratford Conservatory of Classical Theatre Training, the National Theatre School of Canada, the National Arts Centre, the Banff Centre and Concordia University. During that time he has developed an approach to training actors that emphasizes the integration of body, voice and text in performance and he remains very much in demand as a performance coach. "<em>The opportunity to direct a new play by Caitlin Murphy for Hopegrown Productions with two former and talented students, Miriam Cummings and Samantha Megarry, is a privilege. The subject of Caitlin's play, <em class="lotus">LOTUS</em>, matters. The issue of the internet and privacy underlines the potential danger of self-exposure when there are no boundaries. Loss of dignity, loss of control, loss of ourselves, these matter. Working with Caitlin's script and with actors Miriam and Samantha and the designer, Sonya Vallis, to uncover something about what it means to be human in cyberspace is what this production is about for me. The Montreal Fringe gives us the space to explore ways of creating meaningful roles for women in the theatre, which is one of Hopegrown's mandates. This is a young company to watch.</em>"</p>
+			</div>
+			<div class="col-md-3 person">
+				<img src="/images/8619552169_d865953851_n.jpg" alt="Sonya Vallis, Set, Costume, Lighting Designer" title="Sonya Vallis, Set, Costume, Lighting Designer">
+				<p><strong>Sonya Vallis</strong><br>Designer for <em class="lotus">LOTUS</em><br>For Hopegrown: Designer for <em>Around Miss Julie</em> 2013</p>
+				<p>Originally from Vancouver, Sonya moved to Montreal to pursue a career in the theatre. Well, an education in theatre at any rate. Currently entering her final year in Concordia University’s Design for Theatre program, she has had the opportunity to work in many facets of production on many great projects over the last few years. Projects include, A Midsummer Night’s Dream, Repercussion Theatre; Head à Tête, Geordie Productions; Love U Lovecraft, The Other Theatre; The Seventh Seal, and Theatre_Business, Concordia University. Around Miss Julie is no exception; the wonderful team involved with Hopegrown Productions has made this project an exhilarating experience. Wishing everyone the best of luck as the summer tour continues.</p>
+			</div>
+			<div class="col-md-3 person">
+				<img src="/images/8620654396_cea5010a19_n.jpg" alt="Norah Paton, Director" title="Norah Paton, Director">
+				<p><strong>Norah Paton</strong><br>Stage Manager for <em class="lotus">LOTUS</em><br>For Hopegrown: Director for <em>Around Miss Julie</em> 2013</p>
+				<p>Norah is originally from Ottawa, Ontario and just finished four years in Concordia University's Theatre Performance program. While in Montreal, selected on stage and back stage credits include Attempts on Her Life (TNC Theatre), The Last Days of Judas Iscariot and The Seventh Seal (Concordia University). Norah is thrilled to be taking Around Miss Julie to so many different places this summer and is so grateful for the support and enthusiasm we have already received. Here’s to a wonderful summer of wonderful theatre!</p>
+			</div>
+
+		</div>
 
 	{% include footer.html %}
 
