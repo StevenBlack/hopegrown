@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-html-validation' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
-	grunt.loadNpmTasks('grunt-yui-compressor');
+	grunt.loadNpmTasks( 'grunt-yui-compressor' );
 
 	// not implemented in the hp context
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
@@ -89,21 +89,8 @@ module.exports = function( grunt ) {
 	// Compile, minimize CSS
 	grunt.registerTask( 'hpcss', [ 'recess:fontawesome', 'copy:fontawesome', 'copy:lesstweaks', 'recess:bootstrap', 'concat:css', "cssmin:hp" ] );
 
-
 	// Combine, minimize JS
 	grunt.registerTask( 'sbcjs', [ 'concat:bootstrap', 'uglify' ] );
-
-
-	// NOT YET INPLEMENTED
-	// Test task.
-	var testSubtasks = [ 'dist-css', 'jshint', 'qunit', 'validate-html' ];
-	// Only run BrowserStack tests under Travis
-	if ( process.env.TRAVIS ) {
-		// Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
-		if ( (process.env.TRAVIS_REPO_SLUG === 'twbs/bootstrap' && process.env.TRAVIS_PULL_REQUEST === 'false' ) || process.env.TWBS_HAVE_OWN_BROWSERSTACK_KEY ) {
-			testSubtasks.push( 'browserstack_runner' );
-		}
-	}
 
 	grunt.registerTask( 'test', testSubtasks );
 
@@ -132,4 +119,17 @@ module.exports = function( grunt ) {
 		var files = getFiles( 'js' ) + getFiles( 'less' ) + getFiles( 'fonts' )
 		fs.writeFileSync( 'assets/js/raw-files.js', files )
 	});
+
+
+	// NOT YET INPLEMENTED
+	// Test task.
+	var testSubtasks = [ 'dist-css', 'jshint', 'qunit', 'validate-html' ];
+	// Only run BrowserStack tests under Travis
+	if ( process.env.TRAVIS ) {
+		// Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
+		if ( (process.env.TRAVIS_REPO_SLUG === 'twbs/bootstrap' && process.env.TRAVIS_PULL_REQUEST === 'false' ) || process.env.TWBS_HAVE_OWN_BROWSERSTACK_KEY ) {
+			testSubtasks.push( 'browserstack_runner' );
+		}
+	}
+
 };
