@@ -6,6 +6,8 @@ tagline: And they look very good
 
 ---
 
-LOTUS posters have gone to print! Thanks to [Rubiks](https://www.rubiks.ca/)! Expect to see these up starting Wednesday.
+LOTUS posters have gone to print! Thanks to [Rubiks](https://www.rubiks.ca/)! 
+
+These'll soon hang all-over!
 
 <img src="http://hopegrown.ca/images/LotusMtlPoster.jpg" class="right">
