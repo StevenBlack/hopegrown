@@ -28,5 +28,12 @@ layout: 2014base
 		{{ content }}
 		</div>
 	</div>
+	<div class="col-md-6">
+		{% if page.image %}
+		<img src="/images/{{page.image}}" alt="" style="width:100%;margin-bottom:1em" />
+		{% else %}
+		<img src="/images/Mir-Sam.jpg" alt="" style="width:100%;margin-bottom:1em" />
+		{% endif %}
+	</div>
 </div>
 

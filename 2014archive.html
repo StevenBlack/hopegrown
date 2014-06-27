@@ -6,34 +6,45 @@ header_text: Listing of Reports and Posts
 year: 2014
 
 ---
-<div class="archive span6">
-{% comment %}Limitation of this is that need a post each month for it to differentiate between years, etc{% endcomment %}
-{% capture thispageyear %}{{ page.year }}{% endcapture %}
-{% for post in site.posts %}
-	{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-	{% if thispostyear == thispageyear %}
-	{% comment %}This closes the nested list if a new month has begun, unless it's the very first post of course. Also need to ensure closes if very last post.{% endcomment %}
-	{% capture thispostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
-	{% comment %}This opens the nested list for a new month or if its the very first post in the loop{% endcomment %}
-	{% if forloop.first or lastpostmonth != thispostmonth %}
-	<h3>{{post.date | date: "%B %Y"}}</h3>
-	{% endif %}
+<h2>News and Revies for <em class="lotus">LOTUS</em></h2>
+<div class="row">
 
-	{% case post.type %}
-		{% when 'news' %}
-			<dl>
-				<dt><a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>{{ post.title }}</strong></span></a>
-				<br> {{ post.tagline }}
-				</dt>
-				<dd>
-					<span class="archivecontent">{{ post.content | strip_html | truncatewords: 60 }}</span>
-					<a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>(Read more)</strong></span></a>
-				</dd>
-			</dl>
-	{% endcase %}
+	<div class="archive col-md-6">
+	{% comment %}Limitation of this is that need a post each month for it to differentiate between years, etc{% endcomment %}
+	{% capture thispageyear %}{{ page.year }}{% endcapture %}
+	{% for post in site.posts %}
+		{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+		{% if thispostyear == thispageyear %}
+		{% comment %}This closes the nested list if a new month has begun, unless it's the very first post of course. Also need to ensure closes if very last post.{% endcomment %}
+		{% capture thispostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
+		{% comment %}This opens the nested list for a new month or if its the very first post in the loop{% endcomment %}
+		{% if forloop.first or lastpostmonth != thispostmonth %}
+		<h3>{{post.date | date: "%B %Y"}}</h3>
+		{% endif %}
 
-	{% capture lastpostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
-	{% endif %}
-{% endfor %}
+		{% case post.type %}
+			{% when 'news' %}
+				<dl>
+					<dt><a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>{{ post.title }}</strong></span></a>
+					<br> {{ post.tagline }}
+					</dt>
+					<dd>
+						<span class="archivecontent">{{ post.content | strip_html | truncatewords: 60 }}</span>
+						<a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>(Read more)</strong></span></a>
+					</dd>
+				</dl>
+		{% endcase %}
+
+		{% capture lastpostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
+		{% endif %}
+	{% endfor %}
+	</div>
+	<div class="col-md-6">
+		{% if page.image %}
+		<img src="/images/{{page.image}}" alt="" style="width:100%;margin-bottom:1em" />
+		{% else %}
+		<img src="/images/Mir-Sam.jpg" alt="" style="width:100%;margin-bottom:1em" />
+		{% endif %}
+	</div>
 </div>
 <img src="/images/LotusLong.jpg" alt="">
