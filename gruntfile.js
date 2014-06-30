@@ -79,6 +79,9 @@ module.exports = function( grunt ) {
 	// http://nodetoolbox.com/packages/grunt-yui-compressor
 	grunt.loadNpmTasks( 'grunt-yui-compressor' );
 
+	// See https://www.npmjs.org/package/grunt-git
+	grunt.loadNpmTasks('grunt-git');
+
 
 	// Docs HTML validation task
 	grunt.registerTask( 'validate-html', [ 'validation' ] );
