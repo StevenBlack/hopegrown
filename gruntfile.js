@@ -44,7 +44,15 @@ module.exports = function( grunt ) {
 			fontawesome:  { src: [ 'font-awesome/less/font-awesome.less' ], dest: 'font-awesome/css/font-awesome.css' },
 			min:          { options: { compress: true }, src: [ 'bootstrap/less/custom.less' ], dest: 'css/<%= pkg.name %>.bootstrap.min.css' },
 		},
-
+		less: {
+			compileCore: {
+				options: {
+					strictMath: true,
+					outputSourceFiles: true
+				},
+				files: { 'css/<%= pkg.name %>.bootstrap.css': 'bootstrap/less/custom.less' }
+			}
+		},
 		copy      : {
 			fonts: { expand: true, src: [ "fonts/*" ], dest: 'dist/' },
 			fontawesome: { expand: false, flatten: true, filter: 'isFile', src: [ "font-awesome/css/font-awesome.css" ], dest: 'css/' },
@@ -52,10 +60,10 @@ module.exports = function( grunt ) {
 		},
 
 		cssmin: {
-		    'hp': {
-		        'src': [ 'css/<%= pkg.name %>.css' ],
-		        'dest': 'css/<%= pkg.name %>.min.css'
-		    }
+			'hp': {
+				'src': [ 'css/<%= pkg.name %>.css' ],
+				'dest': 'css/<%= pkg.name %>.min.css'
+			}
 		},
 		connect   : { server: { options: { port: 3000, base: '.' } } },
 		validation: { options: { reset: true }, files: { src: [ "_site/**/*.html" ] } }
@@ -73,6 +81,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
+	grunt.loadNpmTasks( 'grunt-contrib-less' );
 	grunt.loadNpmTasks( 'grunt-recess' );
 	grunt.loadNpmTasks( 'browserstack-runner' );
 
@@ -90,49 +99,16 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'concat-mincss', [ 'concat:mincss' ] );
 
 	// Compile, minimize CSS
-	grunt.registerTask( 'hpcss', [ 'recess:fontawesome', 'copy:fontawesome', 'copy:lesstweaks', 'recess:bootstrap', 'concat:css', "cssmin:hp" ] );
+	grunt.registerTask('less-compile', ['less:compileCore']);
+	grunt.registerTask( 'hpcss', [ 'recess:fontawesome', 'copy:fontawesome', 'copy:lesstweaks', 'less-compile', 'concat:css', "cssmin:hp" ] );
 
 	// Combine, minimize JS
 	grunt.registerTask( 'sbcjs', [ 'concat:bootstrap', 'uglify' ] );
-
-	grunt.registerTask( 'test', testSubtasks );
 
 	// Fonts distribution task.
 	grunt.registerTask( 'dist-fonts', [ 'copy' ] );
 
 	// Full distribution task.
 	grunt.registerTask( 'dist', [ 'clean', 'dist-css', 'dist-fonts', 'dist-js' ] );
-
-	// Default task.
-	grunt.registerTask( 'default', [ 'test', 'dist', 'build-customizer' ] );
-
-	// task for building customizer
-	grunt.registerTask( 'build-customizer', 'Add scripts/less files to customizer.', function () {
-		var fs = require( 'fs' )
-
-		function getFiles( type ) {
-			var files = {}
-			fs.readdirSync( type )
-				.filter( function ( path ) { return type == 'fonts' ? true : new RegExp( '\\.' + type + '$' ).test( path ) } )
-				.forEach( function ( path ) { return files[ path ] = fs.readFileSync( type + '/' + path, 'utf8' ) } )
-				return 'var __' + type + ' = ' + JSON.stringify( files ) + '\n'
-		}
-
-		var customize = fs.readFileSync( 'customize.html', 'utf-8' )
-		var files = getFiles( 'js' ) + getFiles( 'less' ) + getFiles( 'fonts' )
-		fs.writeFileSync( 'assets/js/raw-files.js', files )
-	});
-
-
-	// NOT YET INPLEMENTED
-	// Test task.
-	var testSubtasks = [ 'dist-css', 'jshint', 'qunit', 'validate-html' ];
-	// Only run BrowserStack tests under Travis
-	if ( process.env.TRAVIS ) {
-		// Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
-		if ( (process.env.TRAVIS_REPO_SLUG === 'twbs/bootstrap' && process.env.TRAVIS_PULL_REQUEST === 'false' ) || process.env.TWBS_HAVE_OWN_BROWSERSTACK_KEY ) {
-			testSubtasks.push( 'browserstack_runner' );
-		}
-	}
 
 };
