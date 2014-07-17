@@ -53,7 +53,7 @@ module.exports = function( grunt ) {
 				files: { 'css/<%= pkg.name %>.bootstrap.css': 'bootstrap/less/custom.less' }
 			}
 		},
-		copy      : {
+		copy: {
 			fonts: { expand: true, src: [ "fonts/*" ], dest: 'dist/' },
 			fontawesome: { expand: false, flatten: true, filter: 'isFile', src: [ "font-awesome/css/font-awesome.css" ], dest: 'css/' },
 			lesstweaks: { src: [ "less/*" ], dest: 'bootstrap/' }
