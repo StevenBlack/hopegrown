@@ -14,26 +14,9 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li><a href="/#currentProject">Current Project</a></li>
-			<li class="dropdown">
-				{% assign post_count = 0 %}
-				{% for post in site.posts %}
-					{% if post.title and post.type == 'news' %}
-				   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
-					{% endif %}
-				{% endfor %}
-				<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">News and Reviews ({{ post_count }} in all ) <b class="caret"></b></a> -->
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">LOTUS News and Reviews<b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					{% for post in site.posts %}
-						{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-						{% if post.title and post.type == 'news'  and thispostyear == yearbucket %}
-					<li><a href="{{ root_url }}{{ post.url }}">{{ post.date | date: '%b %e %Y' }} - {{ post.title }}</a></li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</li>
-			<li><a href="/2013/">Our 2013 Tour: <em>Around Miss Julie</em></a></li>
+			<li><a href="/#currentProject">Coming in 2015</a></li>
+			<li><a href="/2013/"><em>Around Miss Julie</em> (2013)</a></li>
+			<li><a href="/2014/"><em>LOTUS</em> (2014)</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>

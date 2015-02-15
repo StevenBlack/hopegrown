@@ -1,14 +1,12 @@
 <!-- NAVBAR
 ================================================== -->
-{% assign yearbucket = '2013' %}
+{% assign yearbucket = '2014' %}
 <nav class="navbar navbar-default" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+			Menu
 		</button>
 		<a class="navbar-brand" href="/">Hopegrown Productions</a>
 	</div>
@@ -17,16 +15,15 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
 			<li><a href="/#currentProject">Current Project</a></li>
-			<li><a href="/2013/">Our 2013 Tour: <em>Around Miss Julie</em></a></li>
 			<li class="dropdown">
 				{% assign post_count = 0 %}
 				{% for post in site.posts %}
-					{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-					{% if post.title and post.type == 'news' and thispostyear == yearbucket %}
-					{% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+					{% if post.title and post.type == 'news' %}
+				   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
 					{% endif %}
 				{% endfor %}
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">2013 Reviews ({{ post_count }} in all ) <b class="caret"></b></a>
+				<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">News and Reviews ({{ post_count }} in all ) <b class="caret"></b></a> -->
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">LOTUS News and Reviews<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					{% for post in site.posts %}
 						{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
@@ -36,10 +33,8 @@
 					{% endfor %}
 				</ul>
 			</li>
+			<li><a href="/2013/"><em>Around Miss Julie</em> (2013)</a></li>
 			<li><a href="/2014/"><em>LOTUS</em> (2014)</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
-
-
-
