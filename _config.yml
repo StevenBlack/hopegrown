@@ -4,6 +4,7 @@ permalink: /:year/:title.html
 team: Queen's Sailing
 
 # images
+images: http://d3sl1potqnkeqo.cloudfront.net/
 image_default_alt: Hopegrown Productions
 
 exclude:
