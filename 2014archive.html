@@ -41,10 +41,10 @@ year: 2014
 	</div>
 	<div class="col-md-6">
 		{% if page.image %}
-		<img src="/images/{{page.image}}" alt="" style="width:100%;margin-bottom:1em" />
+		<img src="{{site.images}}{{page.image}}" alt="" style="width:100%;margin-bottom:1em" />
 		{% else %}
-		<img src="/images/Mir-Sam.jpg" alt="" style="width:100%;margin-bottom:1em" />
+		<img src="{{site.images}}Mir-Sam.jpg" alt="" style="width:100%;margin-bottom:1em" />
 		{% endif %}
 	</div>
 </div>
-<img src="/images/LotusLong.jpg" alt="">
+<img src="{{site.images}}LotusLong.jpg" alt="">
