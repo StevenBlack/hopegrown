@@ -15,3 +15,7 @@ Our 2013 production, *Around Miss Julie*, was a new play by **[Harry Standjofski
 * The site itself is served from a [Dropbox](http://dropbx.com) folder that's shared among us, and with web servers.
 * The site is currently hosted by [Hetzner Online](http://www.hetzner.de/en/) in Berlin, with warm-and-ready static standbys at [Atlantic.net](http://www.atlantic.net/) in Florida and [Amazon AWS](http://aws.amazon.com/cloudfront/) in various edge locations.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/StevenBlack/hopegrown.next/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
