@@ -18,6 +18,7 @@ exclude:
 - gruntfile.js
 - Gemfile
 - Gemfile.lock
+- Tests
 
 keywords:
 - Hopegrown Productions

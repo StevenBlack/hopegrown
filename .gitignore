@@ -9,3 +9,5 @@ bootstrap/css/*
 /stuff
 node_modules/
 bios/
+tests
+Gemfile.lock
