@@ -8,13 +8,16 @@ images: http://d3sl1potqnkeqo.cloudfront.net/
 image_default_alt: Hopegrown Productions
 
 exclude:
-- Rakefile
+- rakefile
 - README.md
 - .git
 - font-awesome
 - stuff
-- node-modules
+- node_modules
 - less
+- gruntfile.js
+- Gemfile
+- Gemfile.lock
 
 keywords:
 - Hopegrown Productions
