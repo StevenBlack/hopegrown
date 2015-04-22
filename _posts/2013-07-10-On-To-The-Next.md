@@ -10,11 +10,11 @@ By Norah Paton, <a href="http://www.hopegrown.ca/">Hopegrown Productions</a>
 
 <p>Ottawa was the first stop on our ʻhometown tourʼ of Ontario this summer. Leaving Montreal meant we were sort of living on the road, although with Lindsey and my parents both based in Ottawa, it also meant staying in nicer houses than our apartments in Montreal. We also left Tara and Sonya in Montreal, which meant I had to start being more organized and take over Taraʼs duties. Becoming the Stage Manager meant that changes to our set and design for each new venue were now up to me. The only way to confirm with Sonya that I wasnʼt ruining her design was through anxious phone calls and e-mailed photos.</p>
 
-<p><img src="http://hopegrown.ca/images/hg3.jpg"></p>
+<p><img src="http://hopegrown.ca/images/hg3.jpg" alt="Hopegrown Productions — 2013 — Around Miss Julie"></p>
 
 <p>On Monday, the evening following the close of the Montreal FRINGE, after moving out of Montreal and recovering from our hangovers, we walked into the coffee shop in Ottawa where we would be performing. I was the only one who had seen the venue before, so the actors were freaked out. Staging the show in a coffee shop was completely different than Club Espagnol. ‘Tech’ was pretty much turning off fluorescents and playing a CD out of my old walkman hooked up to some computer speakers, which actually made my new SMʼing duties a little less intimidating. After walking through the blocking for a couple of hours, our time was up in the space until our opening Tuesday evening. The actors were terrified. The show went super well. Fear is great.</p>
 
-<p><img src="http://hopegrown.ca/images/hg2.jpg"></p>
+<p><img src="http://hopegrown.ca/images/hg2.jpg"alt="Hopegrown Productions — 2013 — Around Miss Julie"></p>
 
 <p>Sharing our venue with two other <a href="http://ottawafringe.com/">Ottawa Fringe</a> shows was a great way to come into the Festival late. We owe a huge thank you to the boys at <a href="http://maycantheatre.webs.com/">May Can Theatre</a> and <a href="http://backpacktheatre.webs.com/">Backpack Theatre</a> for helping us with every set up, take down and everything in between. We also want to thank them for being good-looking (#artcrush) and talented. These two groups put up shows they had written themselves and kicked ass. I seriously hope to be working with these dudes in the future.</p>
 

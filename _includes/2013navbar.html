@@ -26,7 +26,7 @@
 					{% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
 					{% endif %}
 				{% endfor %}
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">2013 Reviews ({{ post_count }} in all ) <b class="caret"></b></a>
+				<a href="#" data-proofer-ignore class="dropdown-toggle" data-toggle="dropdown">2013 Reviews ({{ post_count }} in all ) <b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					{% for post in site.posts %}
 						{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
