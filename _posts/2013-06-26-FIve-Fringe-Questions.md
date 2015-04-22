@@ -40,4 +40,4 @@ Friday, June 28 – 7:30pm
 Saturday, June 29 – 6:00pm  
 Sunday, June 30 – 9:00pm  
 
-Advance tickets available [here](http://ottawafringe.com/tickets/around-miss-julie/) at the Fringe website.  $10 at the door with a Fringe pin!
+Advance tickets available at the Fringe website.  $10 at the door with a Fringe pin!
