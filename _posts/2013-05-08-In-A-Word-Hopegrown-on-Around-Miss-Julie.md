@@ -8,7 +8,7 @@ tagline: as featured on <a href="http://www.charpo-canada.com/2013/05/in-word-ho
 
 In September 2012, Hopegrown Productions was created by Miriam Cummings, Lindsey Huebner and Samantha Megarry to facilitate a 2013 Fringe Festival tour.  Graduating from Concordia's Theatre Performance program and keen to work together, the project was initiated to help bridge the gap between the academic and professional worlds.  We commissioned Montreal playwright and director Harry Standjofski to write us a piece of theatre.  The only guideline?  Include three dynamic, interesting roles for women.  Harry developed a new play entitled Around Miss Julie. Around Miss Julie leads us through auditions, rehearsals and opening night.  Four young theatre artists, a director and three actors, work to put up "Julie in a snowstorm", a new adaptation of Strindberg’s classic.  Lyle and Donna are dating - the "Actor Couple".  Ilona's boyfriend lives in Paris.  Julie is unattached, she is the confident director who encourages the cast to tangle with the play… and each other… And a dead bird 
 
-<img width="400" height="266" border="0" src="http://3.bp.blogspot.com/-fqKnTA0V5co/UYbKmSiP5RI/AAAAAAAAPo0/dvEy1z_lTEk/s400/IMG_5310.JPG">
+<img width="400" height="266" border="0" src="http://3.bp.blogspot.com/-fqKnTA0V5co/UYbKmSiP5RI/AAAAAAAAPo0/dvEy1z_lTEk/s400/IMG_5310.JPG" alt="Hopegrown Productions">
 
 **CHARPO:** How much do spectators have to know Miss Julie to understand the work?
 

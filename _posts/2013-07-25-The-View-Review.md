@@ -17,4 +17,4 @@ Everything is even more tied into itself for the fact that Julie chose to produc
 
 **Strong performances from all four cast members make this show really excellent**. It is well worth a visit. Miriam Cummings with beaming presence plays Julie, Mitchell Cohen is strong as actor Lyle, and our two actresses are played by the fiery Lindsey Huebner and the elegant Samantha Megarry.
 
-There is a dark reality hidden in corners of this play, and an intelligence fronted by easygoing humour. Director Norah Paton really gets to the marrow, bringing out the best. There is plenty of skill here – heading to [Edinburgh Fringe](https://edfringe.com) next!
+There is a dark reality hidden in corners of this play, and an intelligence fronted by easygoing humour. Director Norah Paton really gets to the marrow, bringing out the best. There is plenty of skill here – heading to [Edinburgh Fringe](http://edfringe.com) next!

@@ -51,4 +51,4 @@ This article appeared in the July 25, 2014 edition of [London Community News](ht
 >
 >“I can’t think of a better venue in London to bring work that is so close to my heart,” Cummings said. “The staff and volunteers at The Arts Project are just heroes in my book. It just feels right coming back here.”
 >
->Tickets for Lotus are available online through The Arts Project website, [www.artsproject.ca](www.artsproject.ca), or through the box office (203 Dundas St.). Prices are $15 for students, $20 for general audience, and on Tuesday, Aug. 5, Hopegrown is offering a pay-what-you-can performance.
+>Tickets for Lotus are available online through The Arts Project website, [www.artsproject.ca](http://www.artsproject.ca), or through the box office (203 Dundas St.). Prices are $15 for students, $20 for general audience, and on Tuesday, Aug. 5, Hopegrown is offering a pay-what-you-can performance.

@@ -11,7 +11,7 @@ tagline: as featured on <a href="http://bloodyunderrated.net/2013/07/03/hopegrow
 
 <p><em>Every new beginning comes from some other beginning’s end…</em></p>
 
-<p>Lines from the 13th Hour hit ‘Closing Time’ still rattle through my head, even days after our final a capella rendition. Post-show, post-Frankies, post-dance party, post-goodbyes, post-Montreal FRINGE: <a href="http://ottawafringe.com/tickets/around-miss-julie/">we found ourselves in the nation’s capital for round two</a>.</p>
+<p>Lines from the 13th Hour hit ‘Closing Time’ still rattle through my head, even days after our final a capella rendition. Post-show, post-Frankies, post-dance party, post-goodbyes, post-Montreal FRINGE: <a href="http://ottawafringe.com">we found ourselves in the nation’s capital for round two</a>.</p>
 
 <p>This was the play I never thought would open. The preparations, the fundraising, the bureaucracies, the administravia all made the production itself seem far off and theoretical. The Montreal FRINGE made it real.</p>
 
