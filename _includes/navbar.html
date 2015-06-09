@@ -1,6 +1,6 @@
 <!-- NAVBAR
 ================================================== -->
-{% assign yearbucket = '2014' %}
+{% assign yearbucket = '2015' %}
 <nav class="navbar navbar-default" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -14,7 +14,25 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li><a href="/#currentProject"><em>A Nightmare For Oberon</em> (2015)</a></li>
+			<li><a href="/#currentProject"><em>A Nightmare For Oberon</em></a></li>
+			<li class="dropdown">
+				{% assign post_count = 0 %}
+				{% for post in site.posts %}
+					{% if post.title and post.type == 'news' %}
+				   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+					{% endif %}
+				{% endfor %}
+				<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">News and Reviews ({{ post_count }} in all ) <b class="caret"></b></a> -->
+				<a href="#" data-proofer-ignore class="dropdown-toggle" data-toggle="dropdown">2015 News and Reviews<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					{% for post in site.posts %}
+						{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+						{% if post.title and post.type == 'news'  and thispostyear == yearbucket %}
+					<li><a href="{{ root_url }}{{ post.url }}">{{ post.date | date: '%b %e %Y' }} - {{ post.title }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</li>
 			<li><a href="/2014/"><em>LOTUS</em> (2014)</a></li>
 			<li><a href="/2013/"><em>Around Miss Julie</em> (2013)</a></li>
 		</ul>
