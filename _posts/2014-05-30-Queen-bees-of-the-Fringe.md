@@ -10,7 +10,7 @@ This article appeared in the [May 30 2014 edition of the Gazette](http://www.mon
 
 >  MONTREAL — When I began looking at the Montreal Fringe Festival from the “girl power” perspective last week, I was mainly thinking of young playwrights like Johanna Nutter who have launched their careers through this annual performing arts festival, as well as those like Melissa Paulson who are presenting their own plays for the first time.
 >  
->  Nutter is presenting a sequel to her show My Pregnant Brother, titled <b><a href="http://montrealfringe.ca/en/2014/my-playwright-sister" _fcksavedurl="http://montrealfringe.ca/en/2014/my-playwright-sister">My Playwright Sister</a></b>, created with her transgender brother, James Diamond. Paulson will be performing solo in <b><a href="http://montrealfringe.ca/en/2014/love-pie" _fcksavedurl="http://montrealfringe.ca/en/2014/love-pie">For the Love of Pie</a></b>, about an ambitious celebrity chef.
+>  Nutter is presenting a sequel to her show My Pregnant Brother, titled <b><My Playwright Sister</b>, created with her transgender brother, James Diamond. Paulson will be performing solo in <b>For the Love of Pie</b>, about an ambitious celebrity chef.
 >  
 >  While researching, I noticed that women are everywhere at the Fringe, beginning with executive and artistic director Amy Blackmore and Suzanne Hinks, board president of MainLine Theatre, the company that produces the Fringe.
 >  
@@ -32,8 +32,8 @@ This article appeared in the [May 30 2014 edition of the Gazette](http://www.mon
 >  
 >  At the Fringe, there’s no pressure to fit into a male-defined mould. “It’s definitely the place where you get to colour outside the lines,” Blackmore said.
 >  
->  She brought up quirky local performers like Sarah Segal-Lazar (Talk, Mackerel), who will be back with another original musical this year, <b><a href="http://montrealfringe.ca/en/2014/memoriam-wake-cheddar-fandango" _fcksavedurl="http://montrealfringe.ca/en/2014/memoriam-wake-cheddar-fandango">In Memoriam: The Wake of Cheddar Fandango</a></b>; comedian Jess Salomon, who returns with <b><a href="http://montrealfringe.ca/en/2014/imo-my-opinion" _fcksavedurl="http://montrealfringe.ca/en/2014/imo-my-opinion">IMO (In My Opinion)</a></b>; and playwright Caitlin Murphy, back with <b><a href="http://montrealfringe.ca/en/2014/lotus" _fcksavedurl="http://montrealfringe.ca/en/2014/lotus">Lotus</a></b>, a dark comedy about cyberspace harassment.
->  Then there are the out-of-towners, like Ingrid Hansen of Victoria, winner of last year’s Best English Production award for Little Orange Man. She’s back with <b><a href="http://montrealfringe.ca/en/2014/kitt-jane-interactive-survival-guide-near-post-apocalyptic-future" _fcksavedurl="http://montrealfringe.ca/en/2014/kitt-jane-interactive-survival-guide-near-post-apocalyptic-future">Kitt and Jane: An Interactive Survival Guide to the Near-Post-Apocalyptic Future</a></b>.
+>  She brought up quirky local performers like Sarah Segal-Lazar (Talk, Mackerel), who will be back with another original musical this year, <b>In Memoriam: The Wake of Cheddar Fandango</b>; comedian Jess Salomon, who returns with <b>IMO (In My Opinion)</b>; and playwright Caitlin Murphy, back with <b>Lotus</b>, a dark comedy about cyberspace harassment.
+>  Then there are the out-of-towners, like Ingrid Hansen of Victoria, winner of last year’s Best English Production award for Little Orange Man. She’s back with <b>Kitt and Jane: An Interactive Survival Guide to the Near-Post-Apocalyptic Future</b>.
 >  
 >  Are men’s and women’s earnings equal at the Fringe? “I would say so,” Blackmore replied. “The way that you get good houses at the Fringe, you show up with a good show or you show up with good PR. Then you let the Fringe buzz take over, and hopefully it’s all going to work out.”
 >  
