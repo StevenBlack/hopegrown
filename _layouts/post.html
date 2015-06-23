@@ -52,7 +52,11 @@ layout: base
   </div>
 
 <div class="col-md-6">
-	<img src="/images/NightmareForOberonLogo01.jpg" alt="Hopegrown Productions — 2015 — A Nightmare for Oberon" />
+    {% if page.image %}
+    <img src="/images/{{page.image}}" alt="Hopegrown Productions — 2015 — Nightmare for Oberon" style="width:100%;margin-bottom:1em" />
+    {% else %}
+    <img src="/images/NightmareForOberonLogo01.jpg" alt="Hopegrown Productions — 2015 — A Nightmare for Oberon" />
+    {% endif %}
 </div>
 </div>
 
