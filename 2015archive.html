@@ -1,0 +1,36 @@
+---
+layout: base
+title: Article Archive
+permalink: /archive/
+header_text: Listing of Reports and Posts
+
+---
+<div class="archive span6">
+{% comment %}Limitation of this is that need a post each month for it to differentiate between years, etc{% endcomment %}
+{% for post in site.posts %}
+	{% comment %}This closes the nested list if a new month has begun, unless it's the very first post of course. Also need to ensure closes if very last post.{% endcomment %}
+	{% capture thispostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
+	{% comment %}This opens the nested list for a new month or if its the very first post in the loop{% endcomment %}
+	{% if forloop.first or lastpostmonth != thispostmonth %}
+	<h3>{{post.date | date: "%B %Y"}}</h3>
+	{% endif %}
+
+	{% case post.type %}
+		{% when 'news' %}
+			<dl>
+				<dt><a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>{{ post.title }}</strong></span></a>
+				<br> {{ post.tagline }}
+				</dt>
+				<dd>
+					<span class="archivecontent">{{ post.content | strip_html | truncatewords: 60 }}</span>
+					<a href="{{ post.url }}" title="{{ post.title }}"><span class="archivetitle"><strong>(Read more)</strong></span></a>
+				</dd>
+			</dl>
+	{% endcase %}
+
+	{% capture lastpostmonth %}{{ post.date | date: "%B" }}{% endcapture %}
+{% endfor %}
+</div>
+<div class="archive span6">
+	<img src="/images/bloodyboid.jpg" alt="Hopegrown Productions" />
+</div>

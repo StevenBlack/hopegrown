@@ -17,7 +17,7 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
 			<li><a href="/#currentProject">Current Project</a></li>
-			<li><a href="/2013/">Our 2013 Tour: <em>Around Miss Julie</em></a></li>
+			<li><a href="#past">Our 2013 Tour: <em>Around Miss Julie</em></a></li>
 			<li class="dropdown">
 				{% assign post_count = 0 %}
 				{% for post in site.posts %}
@@ -36,7 +36,7 @@
 					{% endfor %}
 				</ul>
 			</li>
-			<li><a href="/2014/"><em>LOTUS</em> (2014)</a></li>
+			{% include PastProductionsMenuDropdown.html %}
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
