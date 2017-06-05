@@ -14,8 +14,6 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li><a href="/#currentProject"><em>The Tragedy of Julius Caesar</em></a></li>
-			<!--
 			<li class="dropdown">
 				{% assign post_count = 0 %}
 				{% for post in site.posts %}
@@ -23,17 +21,16 @@
 				   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
 					{% endif %}
 				{% endfor %}
-				<a href="#" data-proofer-ignore class="dropdown-toggle" data-toggle="dropdown">2016 News and Reviews<b class="caret"></b></a>
+				<a href="#" data-proofer-ignore class="dropdown-toggle" data-toggle="dropdown">News and Reviews<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					{% for post in site.posts %}
 						{% capture thispostyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-						{% if post.title and post.type == 'news'  and thispostyear == yearbucket %}
+						{% if post.title and post.type == 'news' %}
 					<li><a href="{{ root_url }}{{ post.url }}">{{ post.date | date: '%b %e %Y' }} - {{ post.title }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
 			</li>
-			-->
 			{% include PastProductionsMenuDropdown.html %}
 		</ul>
 	</div><!-- /.navbar-collapse -->
