@@ -1,88 +1,28 @@
 source "https://rubygems.org"
-gemspec :name => "jekyll"
+ruby RUBY_VERSION
 
-gem "rake", "~> 10.1"
-group :development do
-  gem "launchy", "~> 2.3"
-  gem "rubocop", :branch => :master, :github => "bbatsov/rubocop"
-  gem "pry"
-
-  unless RUBY_ENGINE == "jruby"
-    gem "pry-byebug"
-  end
-end
-
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
-
-group :test do
-  gem "cucumber", "~> 2.1"
-  gem "jekyll_test_plugin"
-  gem "jekyll_test_plugin_malicious"
-  gem "codeclimate-test-reporter"
-  gem "rspec-mocks"
-  gem "nokogiri"
-  gem "rspec"
-end
-
+#     bundle exec jekyll serve
 #
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+gem "jekyll", "3.4.0"
 
-group :test_legacy do
-  if RUBY_PLATFORM =~ /cygwin/ || RUBY_VERSION.start_with?("2.2")
-    gem 'test-unit'
-  end
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "minima", "~> 2.0"
 
-  gem "redgreen"
-  gem "simplecov"
-  gem "minitest-reporters"
-  gem "minitest-profile"
-  gem "minitest"
-  gem "shoulda"
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
+
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+   gem "jekyll-feed", "~> 0.6"
 end
 
-#
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-group :benchmark do
-  if ENV["BENCHMARK"]
-    gem "ruby-prof"
-    gem "benchmark-ips"
-    gem "stackprof"
-    gem "rbtrace"
-  end
-end
-
-#
-
-group :jekyll_optional_dependencies do
-  gem "toml", "~> 0.1.0"
-  gem "coderay", "~> 1.1.0"
-  gem "jekyll-docs", :path => '../docs' if Dir.exist?('../docs') && ENV['JEKYLL_VERSION']
-  gem "jekyll-gist", "~> 1.0"
-  gem "jekyll-feed", "~> 0.1.3"
-  gem "jekyll-coffeescript", "~> 1.0"
-  gem "jekyll-redirect-from", "~> 0.9.1"
-  gem "jekyll-paginate", "~> 1.0"
-  gem "mime-types", "~> 3.0"
-  gem "kramdown", "~> 1.9"
-  gem "rdoc", "~> 4.2"
-
-  platform :ruby, :mswin, :mingw do
-    gem "rdiscount", "~> 2.0"
-    gem "pygments.rb", "~> 0.6.0"
-    gem "redcarpet", "~> 3.2", ">= 3.2.3"
-    gem "classifier-reborn", "~> 2.0"
-    gem "liquid-c", "~> 3.0"
-  end
-end
-
-#
-
-group :site do
-  if ENV["PROOF"]
-    gem "html-proofer", "~> 2.0"
-  end
-
-  gem "jemoji", "0.5.1"
-  gem "jekyll-sitemap"
-  gem "jekyll-seo-tag", "~> 1.1"
-  gem "jekyll-avatar"
-end
