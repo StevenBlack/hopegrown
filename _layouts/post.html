@@ -25,7 +25,7 @@ layout: base
 <div class="row post-full">
   <div class="col-md-6">
     <div class="date">
-      <p><strong><em>{{ page.date | date: "%B %e, %Y"  }}</em></strong></p>
+      <p><small><em>Posted {{ page.date | date: "%B %e, %Y"  }}</em></small></p>
     </div>
     <div class="content">
       {{ content }}
@@ -53,9 +53,9 @@ layout: base
 
 <div class="col-md-6">
     {% if page.image %}
-    <img src="/images/{{page.image}}" alt="Hopegrown Productions — 2015 — Nightmare for Oberon" style="width:100%;margin-bottom:1em" />
+    <img src="/images/{{page.image}}" alt="Hopegrown Productions" style="width:100%;margin-bottom:1em" />
     {% else %}
-    <img src="/images/NightmareForOberonLogo01.jpg" alt="Hopegrown Productions — 2015 — A Nightmare for Oberon" />
+    <img src="/images/TheOne-thumbnail.jpg" alt="Hopegrown Productions" />
     {% endif %}
 </div>
 </div>
